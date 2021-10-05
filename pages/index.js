@@ -94,7 +94,8 @@ export default function Home() {
               website="http://everydaynotes.net"
               github1="https://github.com/kmgoldfarb/everyday-notes-frontend"
               github2="https://github.com/kmgoldfarb/everyday-notes-backend"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              description="A place to practice reflection in your daily life.
+              Upload daily journal entries that chronicle your actions, mood, gratitude, and thoughts. Attach an image that represents the day. Access your journal from anywhere."
             />
             <ProjectCard
               twoGithub={false}
@@ -102,7 +103,7 @@ export default function Home() {
               tech="React + GraphQL + GraphCMS"
               website="https://www.daniellagoldfarb.com"
               github1="https://github.com/kmgoldfarb/writing-portfolio"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              description="A writing portfolio site for scholars and students that allows them to publish their own content and biography using a headless CMS."
             />
             <ProjectCard
               twoGithub={false}
@@ -110,7 +111,7 @@ export default function Home() {
               tech="React + Google Civic API + Google Places API"
               website="https://www.knowyourdemocracy.com"
               github1="https://github.com/kmgoldfarb/know-your-democracy"
-              description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              description="A website that allows residents of the United States to input their address and see who represents them in government, as well as any upcoming elections near them."
             />
           </Box>
         </Box>
