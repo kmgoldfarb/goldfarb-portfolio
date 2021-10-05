@@ -100,8 +100,9 @@ export default function Home() {
               website="http://everydaynotes.net"
               github1="https://github.com/kmgoldfarb/everyday-notes-frontend"
               github2="https://github.com/kmgoldfarb/everyday-notes-backend"
-              description="A place to practice reflection in your daily life.
-              Upload daily journal entries that chronicle your actions, mood, gratitude, and thoughts. Attach an image that represents the day. Access your journal from anywhere."
+              description="A full stack project that allows users to chronicle their daily thoughts and upload images
+              attached to journal entries. Integrated Firebase Authentication within the React app, used Node
+              and Express to build the API, and deployed the server to a Linux machine."
             />
             <ProjectCard
               twoGithub={false}
@@ -109,7 +110,9 @@ export default function Home() {
               tech="React + GraphQL + GraphCMS"
               website="https://www.daniellagoldfarb.com"
               github1="https://github.com/kmgoldfarb/writing-portfolio"
-              description="A writing portfolio site for scholars and students that allows them to publish their own content and biography using a headless CMS."
+              description="A writing portfolio site for scholars and students that allows them to publish their own content
+              and biography using a headless CMS. Utilizes GraphQL queries to fetch appropriate content and
+              author information."
             />
             <ProjectCard
               twoGithub={false}
@@ -117,7 +120,17 @@ export default function Home() {
               tech="React + Google Civic API + Google Places API"
               website="https://www.knowyourdemocracy.com"
               github1="https://github.com/kmgoldfarb/know-your-democracy"
-              description="A website that allows residents of the United States to input their address and see who represents them in government, as well as any upcoming elections near them."
+              description="A website that allows residents of the United States to input their address and see who
+              represents them in government, as well as any upcoming elections near them. Learned how to
+              implement Google Autocomplete to allow for easy user entry of their address."
+            />
+            <ProjectCard
+              twoGithub={false}
+              title="Kevin Goldfarb Portfolio"
+              tech="NextJS"
+              website="https://kevingoldfarb.com"
+              github1="https://github.com/kmgoldfarb/goldfarb-portfolio"
+              description="The place you're at right now! A site to gather all my work in the same place."
             />
           </Box>
         </Box>
