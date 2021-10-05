@@ -19,7 +19,7 @@ export default function ProjectCard(props) {
       p={4}
       border="2px"
     >
-      <Heading size="lg" p={2} as="mark">
+      <Heading size="lg" p={2} as="u">
         {props.title}
       </Heading>
       <Text mt={4} mb={4}>
