@@ -9,7 +9,7 @@ import {
   BreadcrumbLink,
   Button,
 } from '@chakra-ui/react';
-import { HiArrowNarrowRight, HiDownload } from 'react-icons/hi';
+import { HiHome, HiDownload } from 'react-icons/hi';
 
 export default function About() {
   return (
@@ -48,7 +48,7 @@ export default function About() {
       </Text>
       <Box pb={4}>
         <a
-          href="/uploads/Kevin_Goldfarb_Resume_Sept_2021.pdf"
+          href="/uploads/Kevin_Goldfarb_Resume.pdf"
           alt="Kevin Goldfarb Resume"
           target="_blank"
           rel="noopener noreferrer"
@@ -77,6 +77,16 @@ export default function About() {
         src="/uploads/Profile.jpg"
         alt="Kevin Goldfarb"
       />
+      <Button
+        as="a"
+        href="/"
+        variant="ghost"
+        colorScheme="teal"
+        mt={6}
+        rightIcon={<HiHome />}
+      >
+        Go back home
+      </Button>
     </Box>
   );
 }

@@ -68,7 +68,7 @@ export default function Home() {
                 </Button>
               </NextLink>
               <a
-                href="/uploads/Kevin_Goldfarb_Resume_Sept_2021.pdf"
+                href="/uploads/Kevin_Goldfarb_Resume.pdf"
                 alt="Kevin Goldfarb Resume"
                 target="_blank"
                 rel="noopener noreferrer"
