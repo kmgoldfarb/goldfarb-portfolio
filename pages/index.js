@@ -37,11 +37,9 @@ export default function Home() {
           </Heading>
           <Box pb={6} maxW="2xl" margin="auto">
             <Text pb={4}>
-              A developer based in Milwaukee, Wisconsin. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+              A collaborative, self-starting, and quick-learning developer. I'm
+              currently based in Milwaukee, Wisconsin, and open to any local or
+              remote opportunities.
             </Text>
             <Text pb={4}>
               Email me at <strong>kmgoldfarb@gmail.com</strong>
@@ -65,17 +63,24 @@ export default function Home() {
                   About
                 </Button>
               </NextLink>
-              <Button
-                border="2px"
-                rightIcon={<HiDownload />}
-                _hover={{
-                  bg: '#00B5D8',
-                  textColor: 'white',
-                  borderColor: '#065666',
-                }}
+              <a
+                href="/uploads/Kevin_Goldfarb_Resume_Sept_2021.pdf"
+                alt="Kevin Goldfarb Resume"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Resume Download
-              </Button>
+                <Button
+                  border="2px"
+                  rightIcon={<HiDownload />}
+                  _hover={{
+                    bg: '#00B5D8',
+                    textColor: 'white',
+                    borderColor: '#065666',
+                  }}
+                >
+                  Resume Download
+                </Button>
+              </a>
             </ButtonGroup>
           </Box>
           <Box>
