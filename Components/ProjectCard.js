@@ -5,23 +5,24 @@ import {
   Heading,
   Text,
   Link,
+  Stack,
 } from '@chakra-ui/react';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
 export default function ProjectCard(props) {
   return (
     <Box
-      maxW="2xl"
       borderRadius="lg"
       boxShadow="xl"
       margin="auto"
       marginBottom={8}
       p={4}
       border="2px"
+      borderColor="teal.300"
     >
-      <Heading size="lg" as="u">
-        {props.title}
-      </Heading>
+      <Link href={props.website} isExternal>
+        <Heading size="lg">{props.title}</Heading>
+      </Link>
       <Text mt={4} mb={4}>
         {props.description}
       </Text>
@@ -32,15 +33,13 @@ export default function ProjectCard(props) {
         </Text>
       </Box>
       <Box>
-        <ButtonGroup
-          display="inline"
-          colorScheme="black"
-          size="sm"
-          variant="outline"
-          spacing="4"
-        >
-          {props.twoGithub && (
-            <>
+        {props.twoGithub && (
+          <ButtonGroup
+            size="sm"
+            variant="outline"
+            display={['inline', 'block']}
+          >
+            <Stack direction={['column', 'column', 'row']} spacing={2}>
               <Link
                 href={props.website}
                 style={{ textDecoration: 'none' }}
@@ -49,10 +48,11 @@ export default function ProjectCard(props) {
                 <Button
                   border="2px"
                   rightIcon={<HiOutlineExternalLink />}
+                  borderColor="teal.300"
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Visit Website
@@ -66,10 +66,11 @@ export default function ProjectCard(props) {
                 <Button
                   border="2px"
                   rightIcon={<HiOutlineExternalLink />}
+                  borderColor="teal.300"
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Frontend Github
@@ -83,19 +84,22 @@ export default function ProjectCard(props) {
                 <Button
                   border="2px"
                   rightIcon={<HiOutlineExternalLink />}
+                  borderColor="teal.300"
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Backend Github
                 </Button>
               </Link>
-            </>
-          )}
-          {!props.twoGithub && (
-            <>
+            </Stack>
+          </ButtonGroup>
+        )}
+        {!props.twoGithub && (
+          <ButtonGroup size="sm" variant="outline">
+            <Stack direction={['column', 'column', 'row']} spacing={2}>
               <Link
                 href={props.website}
                 style={{ textDecoration: 'none' }}
@@ -104,10 +108,11 @@ export default function ProjectCard(props) {
                 <Button
                   border="2px"
                   rightIcon={<HiOutlineExternalLink />}
+                  borderColor="teal.300"
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Visit Website
@@ -121,18 +126,19 @@ export default function ProjectCard(props) {
                 <Button
                   border="2px"
                   rightIcon={<HiOutlineExternalLink />}
+                  borderColor="teal.300"
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Github
                 </Button>
               </Link>
-            </>
-          )}
-        </ButtonGroup>
+            </Stack>
+          </ButtonGroup>
+        )}
       </Box>
     </Box>
   );

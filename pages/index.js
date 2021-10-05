@@ -7,6 +7,7 @@ import {
   Box,
   Text,
   Link,
+  Image,
 } from '@chakra-ui/react';
 import { HiArrowNarrowRight, HiDownload } from 'react-icons/hi';
 import ProjectCard from '../Components/ProjectCard';
@@ -22,9 +23,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        <Box margin="auto" maxW="2xl">
+        <Box margin="auto" width={['90%', '80%', '70%', '50%']}>
           <Heading
             as="h1"
             size="3xl"
@@ -35,14 +35,17 @@ export default function Home() {
           >
             Kevin Goldfarb
           </Heading>
-          <Box pb={6} maxW="2xl" margin="auto">
+          <Box pb={6} margin="auto">
             <Text pb={4}>
               A collaborative, self-starting, and quick-learning developer. I'm
               currently based in Milwaukee, Wisconsin, and open to any local or
               remote opportunities.
             </Text>
             <Text pb={4}>
-              Email me at <strong>kmgoldfarb@gmail.com</strong>
+              Email me at{' '}
+              <Link isExternal href="mailto:kmgoldfarb@gmail.com">
+                <strong>kmgoldfarb@gmail.com</strong>
+              </Link>
             </Text>
             <ButtonGroup
               colorScheme="black"
@@ -53,11 +56,12 @@ export default function Home() {
               <NextLink href={'/about'} style={{ textDecoration: 'none' }}>
                 <Button
                   border="2px"
+                  borderColor="teal.300"
                   rightIcon={<HiArrowNarrowRight />}
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   About
@@ -71,11 +75,12 @@ export default function Home() {
               >
                 <Button
                   border="2px"
+                  borderColor="teal.300"
                   rightIcon={<HiDownload />}
                   _hover={{
-                    bg: '#00B5D8',
+                    bg: 'teal.600',
                     textColor: 'white',
-                    borderColor: '#065666',
+                    borderColor: 'teal.800',
                   }}
                 >
                   Resume Download
@@ -83,8 +88,9 @@ export default function Home() {
               </a>
             </ButtonGroup>
           </Box>
+          <Box color="teal.300" borderColor="teal.300" border="2px" />
           <Box>
-            <Heading maxW="2xl" margin="auto" pb={4}>
+            <Heading margin="auto" mb={6} mt={6}>
               Projects
             </Heading>
             <ProjectCard

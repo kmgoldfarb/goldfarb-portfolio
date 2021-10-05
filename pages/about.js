@@ -13,7 +13,7 @@ import { HiArrowNarrowRight, HiDownload } from 'react-icons/hi';
 
 export default function About() {
   return (
-    <Box maxW="2xl" margin="auto" pt={8}>
+    <Box width={['90%', '80%', '70%', '50%']} margin="auto" pt={8}>
       <Breadcrumb pb={2}>
         <BreadcrumbItem>
           <BreadcrumbLink href="/">Home</BreadcrumbLink>
@@ -25,6 +25,7 @@ export default function About() {
         </BreadcrumbItem>
       </Breadcrumb>
       <Heading pb={4}>It's nice to meet you!</Heading>
+      <Box color="teal.300" borderColor="teal.300" border="2px" mb={4} />
       <Text pb={4}>
         Thanks for stopping by my website. I'm a collaborative, self-starting,
         and quick-learning developer looking for frontend or full stack work.
@@ -53,12 +54,15 @@ export default function About() {
           rel="noopener noreferrer"
         >
           <Button
+            bg="none"
+            size="sm"
             border="2px"
             rightIcon={<HiDownload />}
+            borderColor="teal.300"
             _hover={{
-              bg: '#00B5D8',
+              bg: 'teal.600',
               textColor: 'white',
-              borderColor: '#065666',
+              borderColor: 'teal.800',
             }}
           >
             Resume Download
@@ -66,7 +70,9 @@ export default function About() {
         </a>
       </Box>
       <Image
-        borderRadius="full"
+        borderRadius={8}
+        border="2px"
+        borderColor="teal.300"
         boxSize="200px"
         src="/uploads/Profile.jpg"
         alt="Kevin Goldfarb"
