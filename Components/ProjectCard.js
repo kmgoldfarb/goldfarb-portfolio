@@ -19,10 +19,12 @@ export default function ProjectCard(props) {
       p={4}
       border="2px"
     >
-      <Heading size="lg" mb={4}>
+      <Heading size="lg" p={2} as="mark">
         {props.title}
       </Heading>
-      <Text mb={4}>{props.description}</Text>
+      <Text mt={4} mb={4}>
+        {props.description}
+      </Text>
       <Box mb={4}>
         <Text fontFamily="Roboto Mono">
           <strong>TECH: </strong>

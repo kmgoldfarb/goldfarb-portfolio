@@ -67,7 +67,6 @@ export default function About() {
       </Box>
       <Image
         borderRadius="full"
-        border="1px"
         boxSize="200px"
         src="/uploads/Profile.jpg"
         alt="Kevin Goldfarb"
