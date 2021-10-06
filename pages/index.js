@@ -37,9 +37,10 @@ export default function Home() {
           </Heading>
           <Box pb={6} margin="auto">
             <Text pb={4}>
-              A collaborative, self-starting, and quick-learning developer. I'm
-              currently based in Milwaukee, Wisconsin, and open to any local or
-              remote opportunities.
+              A self-taught, quick to learn, and driven developer with
+              substantive front-end and back-end experience. I'm currently based
+              in Milwaukee, Wisconsin, and open to any local or remote
+              opportunities.
             </Text>
             <Text pb={4}>
               Email me at{' '}

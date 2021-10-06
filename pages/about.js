@@ -27,12 +27,12 @@ export default function About() {
       <Heading pb={4}>It's nice to meet you!</Heading>
       <Box color="teal.300" borderColor="teal.300" border="2px" mb={4} />
       <Text pb={4}>
-        Thanks for stopping by my website. I'm a collaborative, self-starting,
-        and quick-learning developer looking for frontend or full stack work.
-        I'm currently based in Milwaukee, Wisconsin, and open to any local or
-        remote opportunities. Previously I've worked as a designer,
-        photographer, and communications specialist. I'd love to get to know you
-        more, so please connect with me over email or on Twitter.
+        Thanks for stopping by my website. I'm a self-taught, quick to learn,
+        and driven developer with substantive front-end and back-end experience
+        based in Milwaukee, Wisconsin. I'm currently open to any local or remote
+        opportunities. Previously I've worked as a designer, communications
+        specialist, and audio engineer. I'd love to get to know you more, so
+        please connect with me over email or on Twitter.
       </Text>
       <Text pb={4}>
         Email:{' '}
