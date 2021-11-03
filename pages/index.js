@@ -7,10 +7,10 @@ import {
   Box,
   Text,
   Link,
-  Image,
 } from '@chakra-ui/react';
 import { HiArrowNarrowRight, HiDownload } from 'react-icons/hi';
 import ProjectCard from '../Components/ProjectCard';
+import TechCard from '../Components/TechCard';
 
 export default function Home() {
   return (
@@ -88,6 +88,57 @@ export default function Home() {
                 </Button>
               </a>
             </ButtonGroup>
+          </Box>
+          <Box color="teal.300" borderColor="teal.300" border="2px" />
+          <Heading margin="auto" mb={6} mt={6}>
+            Proficiencies
+          </Heading>
+          <Box
+            display="flex"
+            justifyContent="space-evenly"
+            flexWrap="wrap"
+            pb={4}
+          >
+            <TechCard
+              imgsrc="/uploads/React-icon.png"
+              imgalt="React"
+              techname="React"
+            />
+            <TechCard
+              imgsrc="/uploads/javascript-144.png"
+              imgalt="JavaScript"
+              techname="JavaScript"
+            />
+            <TechCard
+              imgsrc="/uploads/css3-144.png"
+              imgalt="CSS"
+              techname="CSS"
+            />
+            <TechCard
+              imgsrc="/uploads/html-5-144.png"
+              imgalt="HTML"
+              techname="HTML"
+            />
+            <TechCard
+              imgsrc="/uploads/nodejs-144.png"
+              imgalt="Node"
+              techname="Node"
+            />
+            <TechCard
+              imgsrc="/uploads/python-144.png"
+              imgalt="Python"
+              techname="Python"
+            />
+            <TechCard
+              imgsrc="/uploads/mongodb-144.png"
+              imgalt="MongoDB"
+              techname="MongoDB"
+            />
+            <TechCard
+              imgsrc="/uploads/mysql-logo-144.png"
+              imgalt="MySQL"
+              techname="MySQL"
+            />
           </Box>
           <Box color="teal.300" borderColor="teal.300" border="2px" />
           <Box>
