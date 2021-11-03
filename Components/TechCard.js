@@ -11,6 +11,7 @@ export default function TechCard(props) {
         border="2px"
         borderColor="teal.300"
         borderRadius="lg"
+        boxShadow="md"
         p={1}
       />
       <Text fontSize="lg" align="center" fontWeight="semibold" pt={1}>
