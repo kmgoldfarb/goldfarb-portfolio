@@ -8,8 +8,12 @@ export default function TechCard(props) {
         objectFit="cover"
         src={props.imgsrc}
         alt={props.imgalt}
+        border="2px"
+        borderColor="teal.300"
+        borderRadius="lg"
+        p={1}
       />
-      <Text fontSize="lg" align="center" fontWeight="bold">
+      <Text fontSize="lg" align="center" fontWeight="semibold" pt={1}>
         {props.techname}
       </Text>
     </Box>
