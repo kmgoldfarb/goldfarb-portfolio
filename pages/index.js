@@ -21,7 +21,7 @@ export default function Home() {
           name="description"
           content="A portfolio website for Kevin Goldfarb."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/uploads/favicon.ico" />
       </Head>
       <main>
         <Box margin="auto" width={['90%', '80%', '70%', '50%']}>
