@@ -158,7 +158,15 @@ export default function Home() {
             />
             <ProjectCard
               twoGithub={false}
-              title="Writing Portfolio"
+              title="F1 News Today"
+              tech="Python + Django + HTML"
+              website="https://f-1-news-today-btct9.ondigitalocean.app/"
+              github1="https://github.com/kmgoldfarb/f1-news-today"
+              description="A content aggregator that retrievews news articles, standings, and upcoming races for Formula 1 from around the web. Built the frontend using Django templates, and used Python to build the scripts that scrape the web."
+            />
+            <ProjectCard
+              twoGithub={false}
+              title="Writing Portfolio Site for Academics"
               tech="React + GraphQL + GraphCMS"
               website="https://www.daniellagoldfarb.com"
               github1="https://github.com/kmgoldfarb/writing-portfolio"
