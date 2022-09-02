@@ -58,7 +58,7 @@ export default function About() {
         </Text>
         <Box pb={4}>
           <a
-            href="/uploads/KevinGoldfarb_Developer.pdf"
+            href="/uploads/GoldfarbResume2022.pdf"
             alt="Kevin Goldfarb Resume"
             target="_blank"
             rel="noopener noreferrer"
