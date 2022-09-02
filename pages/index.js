@@ -160,7 +160,7 @@ export default function Home() {
               twoGithub={false}
               title="F1 News Today"
               tech="Python + Django + HTML"
-              // website="https://f1news.today/"
+              website="https://www.f1news.today/"
               github1="https://github.com/kmgoldfarb/f1-news-today"
               description="A content aggregator that retrievews news articles, standings, and upcoming races for Formula 1 from around the web. Built the frontend using Django templates, and used Python to build the scripts that scrape the web."
             />
