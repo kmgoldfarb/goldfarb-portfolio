@@ -68,25 +68,6 @@ export default function Home() {
                   About
                 </Button>
               </NextLink>
-              <a
-                href="/uploads/GoldfarbResume2022.pdf"
-                alt="Kevin Goldfarb Resume"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  border="2px"
-                  borderColor="teal.300"
-                  rightIcon={<HiDownload />}
-                  _hover={{
-                    bg: 'teal.600',
-                    textColor: 'white',
-                    borderColor: 'teal.800',
-                  }}
-                >
-                  Resume Download
-                </Button>
-              </a>
             </ButtonGroup>
           </Box>
           <Box color="teal.300" borderColor="teal.300" border="2px" />

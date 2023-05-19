@@ -56,29 +56,6 @@ export default function About() {
             <strong>@kmgoldfarb</strong>
           </Link>
         </Text>
-        <Box pb={4}>
-          <a
-            href="/uploads/GoldfarbResume2022.pdf"
-            alt="Kevin Goldfarb Resume"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              bg="none"
-              size="sm"
-              border="2px"
-              rightIcon={<HiDownload />}
-              borderColor="teal.300"
-              _hover={{
-                bg: 'teal.600',
-                textColor: 'white',
-                borderColor: 'teal.800',
-              }}
-            >
-              Resume Download
-            </Button>
-          </a>
-        </Box>
         <Image
           borderRadius={8}
           border="2px"
