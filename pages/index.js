@@ -1,38 +1,47 @@
-import Head from 'next/head';
-import NextLink from 'next/link';
-import {
-  Button,
-  ButtonGroup,
-  Heading,
-  Box,
-  Text,
-  Link,
-} from '@chakra-ui/react';
+import { Center, Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Box>
-      <Head>
-        <title>Kevin Goldfarb</title>
-        <meta
-          name="description"
-          content="A portfolio website for Kevin Goldfarb."
-        />
-        <link rel="icon" href="/uploads/favicon.ico" />
-      </Head>
-      <main>
-        <Box margin="auto" width={['90%', '80%', '70%', '50%']}>
-          <Heading
-            as="h1"
-            size="3xl"
-            margin="auto"
-            marginTop={6}
-            pb={4}
-            fontFamily="Heebo"
+    <Center minH="100vh">
+      <Box
+        w="100vw"
+        h="100vh"
+        bg="#021716"
+        textAlign="center"
+        color="#bfdbfe"
+        fontWeight="bold"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Box
+          w="70vw"
+          h="70vh"
+          bg="#143720"
+          textAlign="center"
+          color="#bfdbfe"
+          fontWeight="bold"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Box
+            w="35vw"
+            h="35vh"
+            bg="#32583f"
+            textAlign="center"
+            color="#bfdbfe"
+            fontWeight="bold"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            fontSize="3rem"
+            border="2px solid #bfdbfe"
           >
             Kevin Goldfarb
-          </Heading>
-      </main>
-    </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Center>
   );
 }
